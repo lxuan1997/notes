@@ -1,0 +1,22 @@
+import{_ as n,o as s,c as a,d as e}from"./app.0bc1d381.js";const t={},p=e(`<h1 id="vue-router" tabindex="-1"><a class="header-anchor" href="#vue-router" aria-hidden="true">#</a> Vue Router</h1><h4 id="\u7A7A\u8DEF\u5F84\u5D4C\u5957\u8DEF\u7531" tabindex="-1"><a class="header-anchor" href="#\u7A7A\u8DEF\u5F84\u5D4C\u5957\u8DEF\u7531" aria-hidden="true">#</a> \u7A7A\u8DEF\u5F84\u5D4C\u5957\u8DEF\u7531</h4><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token literal-property property">path</span><span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">component</span><span class="token operator">:</span> Layout<span class="token punctuation">,</span>
+    <span class="token literal-property property">children</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">path</span><span class="token operator">:</span> <span class="token string">&#39;/user&#39;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&#39;user&#39;</span>
+        <span class="token literal-property property">component</span><span class="token operator">:</span> User
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u8FD9\u79CD\u60C5\u51B5\u4E0B\uFF0C<code>/user</code> \u4F5C\u4E3A\u4E00\u4E2A\u7A7A\u8DEF\u5F84\u7684\u5B50\u8DEF\u7531\uFF0C\u5C06\u4F1A\u5C55\u793A\u5728 <code>Layout</code> \u7EC4\u4EF6\u7684 <code>&lt;router-view&gt;</code> \u6807\u7B7E\u5185</p><h4 id="\u901A\u914D\u7B26\u5199\u6CD5\u8C03\u6574" tabindex="-1"><a class="header-anchor" href="#\u901A\u914D\u7B26\u5199\u6CD5\u8C03\u6574" aria-hidden="true">#</a> \u901A\u914D\u7B26\u5199\u6CD5\u8C03\u6574</h4><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// path: &#39;*&#39;,              // vue2</span>
+    <span class="token literal-property property">path</span><span class="token operator">:</span> <span class="token string">&#39;/:pathMatch(.*)*&#39;</span><span class="token punctuation">,</span>  <span class="token comment">// vue3</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&#39;NotFound&#39;</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">&#39;./404.vue&#39;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,6),o=[p];function r(c,i){return s(),a("div",null,o)}var u=n(t,[["render",r],["__file","vue-router.html.vue"]]);export{u as default};

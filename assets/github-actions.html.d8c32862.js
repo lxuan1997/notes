@@ -1,0 +1,1 @@
+import{_ as t,o as a,c,a as e,b as o}from"./app.0bc1d381.js";const s={},i=e("h1",{id:"github-actions",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#github-actions","aria-hidden":"true"},"#"),o(" Github Actions")],-1),n=[i];function r(_,h){return a(),c("div",null,n)}var u=t(s,[["render",r],["__file","github-actions.html.vue"]]);export{u as default};
